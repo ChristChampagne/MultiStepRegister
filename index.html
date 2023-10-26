@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Step Register Form</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    
+    <div class="main-container">
+
+
+
+        <div class="form-1">
+            <div class="form">
+                <div class="form-header">
+                    <div class="form-header-title">
+                        Register
+                    </div>
+                </div>
+
+                <div class="form-body">
+                    <form>
+                        <div class="form-input">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="name">Email</label>
+                            <input type="email" name="name" id="name" placeholder="example@gmail.com" required>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="form-footer">
+                    <button class="form-btn" id="form1-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-counter">
+            Step 1 of 3
+            <div class="step-counter-balls-container">
+
+                <div class="ball-outside">
+                    <div class="ball-active"></div>
+                </div>
+
+                <div class="ball-outside">
+                    <div class="ball"></div>
+                </div>
+
+                <div class="ball-outside">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="assets/js/main.js"></script>
+
 </html>
