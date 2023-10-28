@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Step Register Form</title>
+    <title>Multi Step Register Form Prueba</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -13,7 +13,7 @@
 
 
 
-        <div class="form-1">
+        <div class="form-1" id="form-1">
             <div class="form">
                 <div class="form-header">
                     <div class="form-header-title">
@@ -29,8 +29,35 @@
                         </div>
 
                         <div class="form-input">
-                            <label for="name">Email</label>
-                            <input type="email" name="name" id="name" placeholder="example@gmail.com" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="form-footer">
+                    <button class="form-btn" id="form1-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-2" id="form-2">
+            <div class="form">
+                <div class="form-header">
+                    <div class="form-header-title">
+                        Which topics you are interested in?
+                    </div>
+                </div>
+
+                <div class="form-body">
+                    <form>
+                        <div class="form-input select">
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-input select">
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                         </div>
                     </form>
                 </div>
@@ -43,19 +70,19 @@
         </div>
 
         <div class="step-counter">
-            Step 1 of 3
+            Step <span id="currentStep" class="currentStep"></span> of 3
             <div class="step-counter-balls-container">
 
-                <div class="ball-outside-active">
-                    <div class="ball-active"></div>
+                <div class="ball-outside bo-1">
+                    <div class="ball" id="ball-1"></div>
                 </div>
 
-                <div class="ball-outside">
-                    <div class="ball"></div>
+                <div class="ball-outside bo-2">
+                    <div class="ball" id="ball-2"></div>
                 </div>
 
-                <div class="ball-outside">
-                    <div class="ball"></div>
+                <div class="ball-outside bo-2">
+                    <div class="ball" id="ball-3"></div>
                 </div>
             </div>
         </div>
