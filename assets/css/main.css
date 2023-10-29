@@ -8,7 +8,7 @@ body {
 .main-container {
     display: grid;
     place-items: center;
-    margin-top: 25vmin;
+    margin-top: 20vmin;
 }
 
 .form {
@@ -19,9 +19,10 @@ body {
     padding: 2.5rem;
 }
 
-.form-2{
+.form-2 {
     display: none;
 }
+
 .form-header-title {
     font-family: 'Inter', sans-serif;
     font-size: 1.15rem;
@@ -31,9 +32,10 @@ body {
     font-weight: bold;
 }
 
-.form-body{
+.form-body {
     margin-bottom: 1rem;
 }
+
 .form-input {
     display: grid;
     width: 100%;
@@ -47,13 +49,20 @@ body {
     font-weight: bold;
 }
 
-.select input{
-    height: 10rem !important;
+.select input {
+    height: 3rem !important;
+    text-align: start;
+    color: #757575 !important;
 }
 
+.select input:hover {
+    border-color: #652CD1;
+    transition: ease-in .2s;
+    cursor: pointer;
+}
 
 .form-input input {
-    height: 2.5rem;
+    height: 3rem;
     background-color: #212936;
     outline: none;
     border: 2px solid #3C4451;
@@ -61,7 +70,6 @@ body {
     border-radius: .5rem;
     margin-bottom: 1.5rem;
     color: white;
-    font-weight: bold;
 }
 
 .form-footer {
@@ -81,7 +89,7 @@ body {
     font-size: .9rem;
 }
 
-.step-counter{
+.step-counter {
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -91,16 +99,18 @@ body {
     font-weight: bold;
 }
 
-.currentStep{
+.currentStep {
     margin: .4rem;
 }
 
-.step-counter-balls-container{
+.step-counter-balls-container {
     display: flex;
     margin-left: .8rem;
 }
 
-.ball-outside-active,.active{
+
+.ball-outside-active,
+.active {
     width: 1rem;
     height: 1rem;
     background-color: #342D62;
@@ -108,9 +118,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:.5rem;
+    margin-left: .5rem;
 
-    .ball{
+    .ball {
         width: .5rem;
         height: .5rem;
         background-color: #753EE4;
@@ -118,22 +128,20 @@ body {
     }
 }
 
-.ball-outside{
+.ball-outside {
     width: 1rem;
     height: 1rem;
     border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:.5rem;
+    margin-left: .5rem;
 }
 
 
-.ball{
+.ball {
     width: .5rem;
     height: .5rem;
     background-color: #394050;
     border-radius: .5rem;
 }
-
-

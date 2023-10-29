@@ -53,11 +53,18 @@
                 <div class="form-body">
                     <form>
                         <div class="form-input select">
-                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                            <input type="button" name="sd" id="sd" value="Software Development"
+                                onclick="getTopic(this.id)">
                         </div>
 
                         <div class="form-input select">
-                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                            <input type="button" name="ux" id="ux" placeholder="User Experience" value="User Experience"
+                                onclick="getTopic(this.id)">
+                        </div>
+
+                        <div class="form-input select">
+                            <input type="button" name="gd" id="gd" placeholder="" value="Graphic Design"
+                                onclick="getTopic(this.id)">
                         </div>
                     </form>
                 </div>
@@ -70,18 +77,18 @@
         </div>
 
         <div class="step-counter">
-            Step <span id="currentStep" class="currentStep"></span> of 3
+            Step <span id="currentStep" class="currentStep">1</span> of 3
             <div class="step-counter-balls-container">
 
-                <div class="ball-outside bo-1">
+                <div class="ball-outside bo-1" id="bo-1">
                     <div class="ball" id="ball-1"></div>
                 </div>
 
-                <div class="ball-outside bo-2">
+                <div class="ball-outside bo-2" id="bo-2">
                     <div class="ball" id="ball-2"></div>
                 </div>
 
-                <div class="ball-outside bo-2">
+                <div class="ball-outside bo-2" id="bo-3">
                     <div class="ball" id="ball-3"></div>
                 </div>
             </div>
