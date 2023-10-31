@@ -1,3 +1,4 @@
+let data = [];
 let formOne = document.getElementById('form1-btn')
 let formOneInterface = document.getElementById('form-1')
 let formTwo = document.getElementById('form2-btn')
@@ -13,8 +14,6 @@ let tempCurrentScreen;
 drawBalls();
 
 
-
-let data = [];
 
 formOne.addEventListener('click', (() => {
     !personName.value ? personName.style.borderColor = "#ff0000" : personName.style.borderColor = ""
@@ -65,19 +64,18 @@ function getTopic(select) {
     if (input.classList == "check") {
         input.classList.remove('check');
         input.style.backgroundColor = "#212936";
+        newArray = data.filter(element => element !== input.value);
+        data = newArray;
     } else {
 
         if (data.includes(input.value)) {
             return
         }
 
-            data.push(input.value);
-            input.classList.add("check");
-            input.style.color = "white !important";
-            input.style.backgroundColor = "#652CD1";
-            console.log(data)
-        
-
-
+        data.push(input.value);
+        input.classList.add("check");
+        input.style.color = "white !important";
+        input.style.backgroundColor = "#652CD1";
+        console.log(data)
     }
 }
