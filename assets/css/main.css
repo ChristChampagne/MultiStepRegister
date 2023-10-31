@@ -19,7 +19,7 @@ body {
     padding: 2.5rem;
 }
 
-.form-2 {
+.form-2,.form-3 {
     display: none;
 }
 
@@ -93,6 +93,33 @@ body {
     margin-bottom: .3rem;
     cursor: pointer;
     font-size: .9rem;
+}
+
+.person-data{
+    color:#A0A1A9;
+    font-family: 'Inter', sans-serif;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.person-data-show{
+    color:#E5E7EC;
+    font-weight: normal;
+}
+
+.person-data-show li{
+    font-size: .9rem;
+    font-family: 'Inter', sans-serif;
+    margin-top:.5rem;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    text-align: center;
 }
 
 .step-counter {

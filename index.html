@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Step Register Form Prueba</title>
+    <title>Multi Step Register Form</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -67,11 +67,47 @@
                                 onclick="getTopic(this.id)">
                         </div>
                     </form>
+
+                    <div class="error" id="error"></div>
                 </div>
 
 
                 <div class="form-footer">
-                    <button class="form-btn" id="form1-btn">Continue</button>
+                    <button class="form-btn" id="form2-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-3" id="form-3">
+            <div class="form">
+                <div class="form-header">
+                    <div class="form-header-title" id="form-header-title">
+                      Summary
+                    </div>
+                </div>
+
+                <div class="form-body">
+                    <div class="person-data">
+                        Name: <span id="person-name" class="person-data-show"></span>
+                    </div>
+
+                    <div class="person-data">
+                        Email: <span id="person-email" class="person-data-show"></span>
+                    </div>
+
+                    <div class="person-data">
+                        Topics:
+                    </div>
+
+                    <div class="person-data-show" id="person-topics">
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="form-footer">
+                    <button class="form-btn" id="form3-btn">Continue</button>
                 </div>
             </div>
         </div>
