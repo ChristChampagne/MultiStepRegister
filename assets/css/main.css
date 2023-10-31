@@ -55,6 +55,12 @@ body {
     color: #757575 !important;
 }
 
+.check{
+    background-color: #652CD1 !important;
+    color: white !important;
+}
+
+
 .select input:hover {
     border-color: #652CD1;
     transition: ease-in .2s;

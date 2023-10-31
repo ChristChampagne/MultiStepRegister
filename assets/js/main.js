@@ -54,7 +54,6 @@ function drawBalls() {
             document.getElementById('ball-' + i).style.backgroundColor = "#753EE4";
             document.getElementById('bo-' + currentScreen).classList.add('active')
             tempCurrentScreen = currentScreen - 1;
-            console.log(tempCurrentScreen)
             document.getElementById('bo-' + tempCurrentScreen).classList.remove('active');
         }
     }
@@ -63,16 +62,22 @@ function drawBalls() {
 
 function getTopic(select) {
     input = document.getElementById(select);
-
-
     if (input.classList == "check") {
-
         input.classList.remove('check');
         input.style.backgroundColor = "#212936";
     } else {
-        data.push(input.value);
-        input.classList.add("check");
-        input.style.color = "white !important";
-        input.style.backgroundColor = "#652CD1";
+
+        if (data.includes(input.value)) {
+            return
+        }
+
+            data.push(input.value);
+            input.classList.add("check");
+            input.style.color = "white !important";
+            input.style.backgroundColor = "#652CD1";
+            console.log(data)
+        
+
+
     }
 }
